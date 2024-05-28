@@ -6,10 +6,13 @@ import (
 	//"github.com/cyworkd/practical-go/generics"
 	//"github.com/cyworkd/practical-go/goroutines"
 	//"github.com/cyworkd/practical-go/channels"
+	"github.com/cyworkd/practical-go/patterns/creational/prototype"
 	//"github.com/cyworkd/practical-go/patterns/creational/builder"
 	//"github.com/cyworkd/practical-go/patterns/creational/singleton"
 	//"github.com/cyworkd/practical-go/patterns/creational/factory"
-	"github.com/cyworkd/practical-go/patterns/creational/abstractfactory"
+	//"github.com/cyworkd/practical-go/patterns/creational/abstractfactory"
+	//"github.com/cyworkd/practical-go/patterns/structural/bridge"
+	"github.com/cyworkd/practical-go/patterns/structural/composite"
 	//"github.com/cyworkd/practical-go/workerpool"
 )
 
@@ -29,13 +32,19 @@ func main() {
 
 	//channels.Run()
 
+	prototype.Run()
+
 	//builder.Run()
 
 	//singleton.Run()
 
 	//factory.Run()
 
-	abstractfactory.Run()
+	//abstractfactory.Run()
+
+	//bridge.Run()
+
+	composite.Run()
 
 	//workerpool.Run()
 	//close the execution
