@@ -36,6 +36,9 @@ func Run() {
 	var wg sync.WaitGroup
 	printMessage("Direct call: ")
 
+	// Add 1 to the wait group
+	// The go routine is started in a new go routine.
+	// The wait group is decremented when the go routine finishes.
 	wg.Add(1)
 	go func() {
 		defer wg.Done()
@@ -48,6 +51,7 @@ func Run() {
 
 	time.Sleep(1 * time.Second)
 	fmt.Println("Hello from main function!")
+	// Wait for the go routine to finish
 	wg.Wait()
 
 }

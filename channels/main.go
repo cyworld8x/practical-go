@@ -112,8 +112,8 @@ func Run() {
 	publisher := make(chan string, 1)
 	subscriber := make(chan string, 1)
 
-	publish := func(pings chan<- string, msg string) {
-		pings <- msg
+	publish := func(pub chan<- string, msg string) {
+		pub <- msg
 	}
 
 	subscribe := func(pub <-chan string, sub chan<- string) {

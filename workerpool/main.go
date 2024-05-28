@@ -1,5 +1,11 @@
 package workerpool
 
+//worker pool design pattern is a creational design pattern that uses a fixed-size pool of workers to perform concurrent tasks.
+//The worker pool design pattern is used to create a pool of workers that can perform concurrent tasks.
+//The worker pool design pattern is useful when you have a large number of tasks that need to be performed concurrently.
+
+//Context sample: 3 workers are used to perform 50 concurrent tasks in a fixed-size pool of workers.
+
 import (
 	"fmt"
 	"time"
@@ -15,7 +21,7 @@ func worker(id int, jobs <-chan int, results chan<- int) {
 }
 
 func Run() {
-	const numJobs = 5
+	const numJobs = 50
 	jobs := make(chan int, numJobs)
 	results := make(chan int, numJobs)
 

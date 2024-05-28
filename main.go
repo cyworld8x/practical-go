@@ -7,8 +7,10 @@ import (
 	//"github.com/cyworkd/practical-go/goroutines"
 	//"github.com/cyworkd/practical-go/channels"
 	//"github.com/cyworkd/practical-go/patterns/creational/builder"
-	"github.com/cyworkd/practical-go/workerpool"
 	//"github.com/cyworkd/practical-go/patterns/creational/singleton"
+	//"github.com/cyworkd/practical-go/patterns/creational/factory"
+	"github.com/cyworkd/practical-go/patterns/creational/abstractfactory"
+	//"github.com/cyworkd/practical-go/workerpool"
 )
 
 func main() {
@@ -30,6 +32,11 @@ func main() {
 	//builder.Run()
 
 	//singleton.Run()
-	workerpool.Run()
+
+	//factory.Run()
+
+	abstractfactory.Run()
+
+	//workerpool.Run()
 	//close the execution
 }
