@@ -10,18 +10,19 @@ Key points include
     - Generic
     - Etc
 
-To watch each of key knowledge let look into corresponding folder. 
-At header of the main.go file describle about key point along with the example context to apply
+To watch each key knowledge let's look into the corresponding folder. 
+At the header of the main.go file describe key points along with the example context to apply
 
-The second part is about set of examples in how to apply design patterns in Go.
+The second part is about the set of examples of how to apply design patterns in Go.
 
-List of design patterns locates under /patterns folder 
+The list of design patterns is located under /patterns folder 
+
     - Creational patterns: prototype, builder, factory, abstract factory, etc.
     - Structural patterns: bridge, composite, etc.
     - Behavioral patterns: command, mediator, etc.
 
 
-To watch each example, point to the /main.go file at root folder of project and go run the main program
+To watch each example, point to the /main.go file at the root project and go run the main program
 
     go run main.go
 
